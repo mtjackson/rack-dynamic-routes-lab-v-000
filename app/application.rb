@@ -8,6 +8,7 @@ class Application
 
     if !req.path.match(/items/)
       resp.status = 404
+    end
 
   end
 
