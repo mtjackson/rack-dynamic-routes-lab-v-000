@@ -11,6 +11,7 @@ class Application
       if @@items.find {|i| i.name == item_name}
         resp.write "#{item_name.price}"
       else
+        resp.write "Item not found"
       end
 
       resp.write "Route not found"
