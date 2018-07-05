@@ -8,7 +8,7 @@ class Application
 
     if req.path.match(/items/)
       item_name = req.path.split("/items/").last
-      @@items.find(item_name) {|i| i.name}
+      @@items.find(item_name) {|i| i.name == item_name}
 
       resp.write "Route not found"
 
