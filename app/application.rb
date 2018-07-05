@@ -8,6 +8,7 @@ class Application
 
     if !req.path.match(/items/)
       resp.status = 404
+      resp.write = "Route note found"
     end
 
   end
